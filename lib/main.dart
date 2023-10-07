@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'pages/page.dart';
+import 'pages/tutorialPage/tutorialPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +10,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool hasData = true;
+    Widget initialPage = Container();
+
+    if (hasData) {
+      initialPage = const TutorialPage();
+    }
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        fontFamily: 'TypoRound',
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: initialPage,
     );
   }
 }
