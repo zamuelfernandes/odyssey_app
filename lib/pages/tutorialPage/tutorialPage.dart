@@ -50,87 +50,140 @@ class TutorialPageState extends State<TutorialPage> {
               children: [
                 //TUTORIAL 1 ----------------------------------------------
                 Padding(
-                  padding: EdgeInsets.only(bottom: screenHeight * 0.4),
+                  padding: EdgeInsets.only(
+                    bottom: screenHeight * 0.4,
+                    left: 30,
+                    right: 30,
+                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Image(
-                        width: screenWidth * 0.85,
-                        fit: BoxFit.cover,
-                        image: const AssetImage('assets/images/ody.png'),
+                      SvgPicture.asset(
+                        'assets/images/tutorial1.svg',
+                        width: screenWidth * 0.80,
                       ),
+                      const SizedBox(height: 25),
                       const Text(
-                        'Tutorial 1',
-                        style: TextStyle(color: AppColors.white),
+                        'Conheça os planetas do nosso sistema solar com alguns cliques!',
+                        style: TextStyle(
+                          color: AppColors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
                       )
                     ],
                   ),
                 ),
                 //TUTORIAL 2 ----------------------------------------------
                 Padding(
-                  padding: EdgeInsets.only(bottom: screenHeight * 0.4),
+                  padding: EdgeInsets.only(
+                    bottom: screenHeight * 0.4,
+                    left: 30,
+                    right: 30,
+                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       SvgPicture.asset(
-                        'assets/images/tutorial1.svg',
-                        width: screenWidth * 0.85,
+                        'assets/images/tutorial2.svg',
+                        width: screenWidth * 0.80,
                       ),
+                      const SizedBox(height: 25),
                       const Text(
-                        'Conheça os planetas do nosso sistema solar com alguns cliques!',
-                        style: TextStyle(color: AppColors.white),
+                        'Veja os pontos turísticos mais famosos de cada planeta!',
+                        style: TextStyle(
+                          color: AppColors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
                       )
                     ],
                   ),
                 ),
                 //TUTORIAL 3 ----------------------------------------------
                 Padding(
-                  padding: EdgeInsets.only(bottom: screenHeight * 0.4),
+                  padding: EdgeInsets.only(
+                    bottom: screenHeight * 0.4,
+                    left: 30,
+                    right: 30,
+                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       SvgPicture.asset(
-                        'assets/images/tutorial2.svg',
-                        width: screenWidth * 0.85,
+                        'assets/images/tutorial3.svg',
+                        width: screenWidth * 0.80,
                       ),
+                      const SizedBox(height: 50),
                       const Text(
-                        'Veja os pontos turísticos mais famosos de cada planeta!',
-                        style: TextStyle(color: AppColors.white),
+                        'Desenhe sua rota turística e conheça todo o sistema solar!',
+                        style: TextStyle(
+                          color: AppColors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
                       )
                     ],
                   ),
                 ),
                 //TUTORIAL 4 ----------------------------------------------
                 Padding(
-                  padding: EdgeInsets.only(bottom: screenHeight * 0.4),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      SvgPicture.asset(
-                        'assets/images/tutorial3.svg',
-                        width: screenWidth * 0.85,
-                      ),
-                      const Text(
-                        'Desenhe sua rota turística e conheça todo o sistema solar!',
-                        style: TextStyle(color: AppColors.white),
-                      )
-                    ],
+                  padding: EdgeInsets.only(
+                    bottom: screenHeight * 0.4,
+                    left: 30,
+                    right: 30,
                   ),
-                ),
-                //TUTORIAL 5 ----------------------------------------------
-                Padding(
-                  padding: EdgeInsets.only(bottom: screenHeight * 0.4),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       SvgPicture.asset(
                         'assets/images/tutorial4.svg',
-                        width: screenWidth * 0.85,
+                        width: screenWidth * 0.80,
                       ),
+                      const SizedBox(height: 15),
                       const Text(
                         'Envie seu pedido para a NASA e aguarde a confirmação da sua viagem interespacial!',
-                        style: TextStyle(color: AppColors.white),
+                        style: TextStyle(
+                          color: AppColors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
                       )
+                    ],
+                  ),
+                ),
+                //LET'S GOOO ----------------------------------------------
+                Padding(
+                  padding: EdgeInsets.only(
+                    bottom: screenHeight * 0.4,
+                    left: 30,
+                    right: 30,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Image(
+                        width: screenWidth * 0.80,
+                        fit: BoxFit.cover,
+                        image: const AssetImage('assets/images/ody.png'),
+                      ),
+                      const SizedBox(height: 15),
+                      const Text(
+                        'ODYSSEY',
+                        style: TextStyle(
+                          fontFamily: 'NicoMoji',
+                          fontSize: 55,
+                          color: AppColors.white,
+                        ),
+                      ),
+                      const Text(
+                        'O universo na palma da sua mão!',
+                        style: TextStyle(
+                          color: AppColors.white,
+                          fontSize: 16,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ],
                   ),
                 ),
@@ -139,49 +192,106 @@ class TutorialPageState extends State<TutorialPage> {
             ),
             //DOT INDCATOR ----------------------------------------------
             Padding(
-              padding: EdgeInsets.only(bottom: screenHeight * 0.3),
-              child: AnimatedSmoothIndicator(
-                activeIndex: activeIndex,
-                count: 5,
-                effect: const JumpingDotEffect(
-                  activeDotColor: AppColors.purple,
-                  dotColor: AppColors.deepPurple,
-                  dotWidth: 10,
-                  dotHeight: 10,
-                ),
-              ),
-            ),
-            //NEXT BUTTON ----------------------------------------------
-            Padding(
-              padding: const EdgeInsets.only(bottom: 50),
-              child: ElevatedButton(
-                onPressed: () {
-                  if (activeIndex < 4) {
-                    _pageController.nextPage(
-                      duration: const Duration(
-                        milliseconds: 500,
-                      ),
-                      curve: Curves.easeInOut,
-                    );
-                  } else {
-                    print('Bora pra outra página');
-                  }
-                },
-                style: const ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(AppColors.blue),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
-                  child: Text(
-                    activeIndex < 4 ? 'Próximo' : 'Vamos lá!',
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
+              padding: EdgeInsets.only(bottom: screenHeight * 0.25),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  //PREV PAGE ------------------------
+                  IconButton.filled(
+                    onPressed: () {
+                      if (activeIndex > 0) {
+                        _pageController.previousPage(
+                          duration: const Duration(
+                            milliseconds: 500,
+                          ),
+                          curve: Curves.easeInOut,
+                        );
+                      }
+                    },
+                    icon: const Icon(
+                      Icons.arrow_back_ios_rounded,
+                      size: 35,
                       color: AppColors.white,
                     ),
+                    style: const ButtonStyle(
+                      backgroundColor:
+                          MaterialStatePropertyAll(AppColors.purple),
+                    ),
                   ),
-                ),
+                  const SizedBox(width: 25),
+                  //INDICATOR ------------------------
+                  AnimatedSmoothIndicator(
+                    activeIndex: activeIndex,
+                    count: 5,
+                    effect: const JumpingDotEffect(
+                      activeDotColor: AppColors.purple,
+                      dotColor: AppColors.deepPurple,
+                      dotWidth: 15,
+                      dotHeight: 15,
+                    ),
+                  ),
+                  const SizedBox(width: 25),
+                  //NEXT PAGE ------------------------
+                  IconButton.filled(
+                    onPressed: () {
+                      if (activeIndex < 4) {
+                        _pageController.nextPage(
+                          duration: const Duration(
+                            milliseconds: 500,
+                          ),
+                          curve: Curves.easeInOut,
+                        );
+                      }
+                    },
+                    icon: const Icon(
+                      Icons.arrow_forward_ios_rounded,
+                      size: 35,
+                      color: AppColors.white,
+                    ),
+                    style: const ButtonStyle(
+                      backgroundColor:
+                          MaterialStatePropertyAll(AppColors.purple),
+                    ),
+                  ),
+                ],
               ),
-            )
+            ),
+            activeIndex > 3
+                ? Padding(
+                    padding: EdgeInsets.only(bottom: screenHeight * 0.1),
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: AppColors.white,
+                            blurRadius: 15,
+                            spreadRadius: 0.2,
+                          ),
+                        ],
+                      ),
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: const Text(
+                          'Entre no\nUniverso',
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                  )
+                : Container(),
+            activeIndex < 4
+                ? Padding(
+                    padding: EdgeInsets.only(bottom: screenHeight * 0.05),
+                    child: const Text(
+                      'ODYSSEY',
+                      style: TextStyle(
+                        fontFamily: 'NicoMoji',
+                        fontSize: 26,
+                        color: AppColors.white,
+                      ),
+                    ),
+                  )
+                : Container(),
           ],
         ),
       ),
