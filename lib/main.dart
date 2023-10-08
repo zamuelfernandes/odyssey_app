@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:odyssey_app/pages/initialPage/carrousselPage.dart';
 import 'pages/tutorialPage/tutorialPage.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     Widget initialPage = Container();
 
     if (hasData) {
-      initialPage = const TutorialPage();
+      initialPage = const CarrouselPage();
     }
 
     Future<void> readJson() async {
