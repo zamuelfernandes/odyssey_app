@@ -10,7 +10,7 @@ import 'package:odyssey_app/themes/app_colors.dart';
 import '../../models/distances.dart';
 import '../../models/planets.dart';
 import '../../services/jsonData.dart';
-import '../initialPage/carrousselPage.dart';
+import '../initialPage/initialPage.dart';
 
 class TutorialPage extends StatefulWidget {
   final String title;
@@ -302,7 +302,7 @@ class TutorialPageState extends State<TutorialPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: ((context) => const CarrouselPage()),
+                              builder: ((context) => const InitialPage()),
                             ),
                           );
                         },

@@ -21,7 +21,7 @@ class TravelPage extends StatefulWidget {
 class _TravelPageState extends State<TravelPage> {
   final TextEditingController _dropNamesController = TextEditingController();
 
-  List<String> dropNames = ['Select a Planet'];
+  List<String> dropNames = ['Selecione a origem'];
 
   List<Planet> planetsToRoute = [];
 
@@ -46,7 +46,7 @@ class _TravelPageState extends State<TravelPage> {
       height: screenHeight,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/images/background.png"),
+          image: AssetImage("assets/images/background2.png"),
           fit: BoxFit.cover,
         ),
       ),
@@ -149,7 +149,7 @@ class _TravelPageState extends State<TravelPage> {
                         child: ListTile(
                           tileColor: Colors.transparent,
                           leading: SizedBox(
-                            width: 60,
+                            width: 50,
                             child: Image(
                               image: AssetImage(planetsToRoute[index].imagem!),
                               fit: BoxFit.cover,
@@ -205,7 +205,10 @@ class _TravelPageState extends State<TravelPage> {
                     onPressed: () {},
                     child: const Text(
                       'Visualizar Rota',
-                      style: TextStyle(fontSize: 24),
+                      style: TextStyle(
+                        fontSize: 24,
+                        color: AppColors.black,
+                      ),
                       textAlign: TextAlign.center,
                     ),
                   ),

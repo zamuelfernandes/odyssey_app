@@ -44,7 +44,7 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
       height: screenHeight,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/images/background.png"),
+          image: AssetImage("assets/images/background2.png"),
           fit: BoxFit.cover,
         ),
       ),
@@ -77,28 +77,37 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
             alignment: Alignment.topCenter,
             children: [
               Container(
-                  margin: const EdgeInsets.only(top: 120),
-                  width: screenWidth * 0.8,
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(150),
-                      topRight: Radius.circular(150),
-                    ),
-                    color: Colors.black.withOpacity(0.5),
-                  )),
-              Hero(
-                tag: '${widget.planet.nome}',
-                child: Image.asset(
-                  widget.planet.imagem!,
-                  fit: BoxFit.cover,
-                  width: screenWidth * 0.6,
+                margin: const EdgeInsets.only(top: 120),
+                width: screenWidth * 0.85,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(150),
+                    topRight: Radius.circular(150),
+                  ),
+                  color: Colors.black.withOpacity(0.5),
+                ),
+              ),
+              Padding(
+                padding: widget.planet.nome == 'Saturno'
+                    ? const EdgeInsets.only(top: 60)
+                    : EdgeInsets.zero,
+                child: Hero(
+                  tag: '${widget.planet.nome}',
+                  child: Image.asset(
+                    widget.planet.imagem!,
+                    fit: BoxFit.cover,
+                    width: widget.planet.nome == 'Saturno'
+                        ? screenWidth * 0.8
+                        : screenWidth * 0.7,
+                  ),
                 ),
               ),
               SizedBox(
-                width: screenWidth * 0.7,
+                width: screenWidth * 0.75,
                 child: Column(
                   children: [
-                    const SizedBox(height: 230),
+                    const SizedBox(height: 280),
                     Text(
                       '${widget.planet.nome}',
                       style: const TextStyle(
@@ -108,21 +117,39 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
                       ),
                     ),
                     Container(
-                      width: screenWidth * 0.4,
+                      width: screenWidth * 0.45,
                       height: 1,
                       color: AppColors.white,
-                      margin: const EdgeInsets.symmetric(vertical: 15),
+                      margin: const EdgeInsets.only(bottom: 25),
                     ),
-                    infoTextWidget('Temperatura Máxima: ',
-                        '${widget.planet.maxTemperatura}'),
-                    infoTextWidget('Temperatura Mínima: ',
-                        '${widget.planet.minTemperatura}'),
-                    infoTextWidget('Duração do Ano: ', '${widget.planet.ano}'),
-                    infoTextWidget('Duração do Dia: ', '${widget.planet.dia}'),
-                    infoTextWidget('Diâmetro: ', '${widget.planet.nome}'),
-                    infoTextWidget('Tamanho em Relação a Terra: ',
-                        '${widget.planet.tamanhoRelacaoTerra}'),
-                    infoTextWidget('Gravidade: ', '${widget.planet.gravidade}'),
+                    infoTextWidget(
+                      '- Temperatura Máxima: ',
+                      '${widget.planet.maxTemperatura}',
+                    ),
+                    infoTextWidget(
+                      '- Temperatura Mínima: ',
+                      '${widget.planet.minTemperatura}',
+                    ),
+                    infoTextWidget(
+                      '- Duração do Ano: ',
+                      '${widget.planet.ano}',
+                    ),
+                    infoTextWidget(
+                      '- Duração do Dia: ',
+                      '${widget.planet.dia}',
+                    ),
+                    infoTextWidget(
+                      '- Diâmetro: ',
+                      '${widget.planet.nome}',
+                    ),
+                    infoTextWidget(
+                      '- Tamanho em Relação a Terra: ',
+                      '${widget.planet.tamanhoRelacaoTerra}',
+                    ),
+                    infoTextWidget(
+                      '- Gravidade: ',
+                      '${widget.planet.gravidade}',
+                    ),
                     // infoTextWidget('Descrição: ', '${widget.planet!.descricao}'),
                     InkWell(
                       highlightColor: Colors.transparent,
@@ -141,10 +168,13 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
                           },
                         );
                       },
-                      child: Image.asset(
-                        'assets/images/player.png',
-                        fit: BoxFit.cover,
-                        width: screenWidth * 0.2,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        child: Image.asset(
+                          'assets/images/player.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.3,
+                        ),
                       ),
                     ),
 
@@ -167,18 +197,10 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
                             ),
                           );
                         },
-                        child: const Column(
-                          children: [
-                            Icon(
-                              Icons.rocket_launch_outlined,
-                              size: 45,
-                            ),
-                            Text(
-                              'Ver Rota',
-                              style: TextStyle(fontSize: 30),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
+                        child: const Text(
+                          'Pontos Turisticos',
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
                         ),
                       ),
                     )
@@ -202,12 +224,16 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
           style: const TextStyle(
             color: AppColors.white,
             fontWeight: FontWeight.w600,
+            fontSize: 16,
           ),
         ),
         Flexible(
           child: Text(
             value,
-            style: const TextStyle(color: AppColors.white),
+            style: const TextStyle(
+              color: AppColors.white,
+              fontSize: 16,
+            ),
           ),
         ),
       ],
