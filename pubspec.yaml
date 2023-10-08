@@ -92,11 +92,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: TypoRound
+    - family: CaboRounded
       fonts:
-        - asset: assets/fonts/typo-round/Typo_Round_Regular_Demo.otf
-        - asset: assets/fonts/typo-round/Typo_Round_Bold_Demo.otf
-          weight: 700
+        - asset: assets/fonts/cabo-rounded/Cabo-Rounded-Regular.otf
 
     - family: NicoMoji
       fonts:
