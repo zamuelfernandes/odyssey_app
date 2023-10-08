@@ -122,35 +122,45 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
                       color: AppColors.white,
                       margin: const EdgeInsets.only(bottom: 25),
                     ),
-                    infoTextWidget(
-                      '- Temperatura Máxima: ',
-                      '${widget.planet.maxTemperatura}',
+                    SizedBox(
+                      width: screenWidth * 0.75,
+                      child: Column(
+                        children: [
+                          infoTextWidget(
+                            '- Temperatura Máxima: ',
+                            '${widget.planet.maxTemperatura}',
+                          ),
+                          infoTextWidget(
+                            '- Temperatura Mínima: ',
+                            '${widget.planet.minTemperatura}',
+                          ),
+                          infoTextWidget(
+                            '- Duração do Ano: ',
+                            '${widget.planet.ano}',
+                          ),
+                          infoTextWidget(
+                            '- Duração do Dia: ',
+                            '${widget.planet.dia}',
+                          ),
+                          infoTextWidget(
+                            '- Diâmetro: ',
+                            '${widget.planet.nome}',
+                          ),
+                          infoTextWidget(
+                            '- Tamanho em Relação a Terra: ',
+                            '${widget.planet.tamanhoRelacaoTerra}',
+                          ),
+                          infoTextWidget(
+                            '- Gravidade: ',
+                            '${widget.planet.gravidade}',
+                          ),
+                          infoTextWidget(
+                            '- Descrição: ',
+                            '${widget.planet.descricao}',
+                          ),
+                        ],
+                      ),
                     ),
-                    infoTextWidget(
-                      '- Temperatura Mínima: ',
-                      '${widget.planet.minTemperatura}',
-                    ),
-                    infoTextWidget(
-                      '- Duração do Ano: ',
-                      '${widget.planet.ano}',
-                    ),
-                    infoTextWidget(
-                      '- Duração do Dia: ',
-                      '${widget.planet.dia}',
-                    ),
-                    infoTextWidget(
-                      '- Diâmetro: ',
-                      '${widget.planet.nome}',
-                    ),
-                    infoTextWidget(
-                      '- Tamanho em Relação a Terra: ',
-                      '${widget.planet.tamanhoRelacaoTerra}',
-                    ),
-                    infoTextWidget(
-                      '- Gravidade: ',
-                      '${widget.planet.gravidade}',
-                    ),
-                    // infoTextWidget('Descrição: ', '${widget.planet!.descricao}'),
                     InkWell(
                       highlightColor: Colors.transparent,
                       splashColor: Colors.transparent,
@@ -177,7 +187,6 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
                         ),
                       ),
                     ),
-
                     Container(
                       decoration: const BoxDecoration(
                         boxShadow: [
