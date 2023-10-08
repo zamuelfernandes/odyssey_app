@@ -1,7 +1,6 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:odyssey_app/services/jsonData.dart';
+import 'package:odyssey_app/themes/app_colors.dart';
 import 'pages/tutorialPage/tutorialPage.dart';
 
 void main() {
@@ -10,7 +9,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
-  List? _planets = [];
 
   @override
   Widget build(BuildContext context) {
@@ -21,20 +19,11 @@ class MyApp extends StatelessWidget {
       initialPage = const TutorialPage();
     }
 
-    Future<void> readJson() async {
-      final String response =
-          await rootBundle.loadString('lib/services/planetas.json');
-      final data = await json.decode(response);
-      _planets = data["planets"];
-      print(_planets);
-    }
-
-    readJson();
-
+    print(planetsList);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.deepPurple),
         useMaterial3: true,
         fontFamily: 'TypoRound',
         //ELEVATED BUTTON STYLE -------------------------------------------
@@ -49,7 +38,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             padding: MaterialStatePropertyAll(
-              EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+              EdgeInsets.symmetric(vertical: 10, horizontal: 15),
             ),
             textStyle: MaterialStatePropertyAll(
               TextStyle(
