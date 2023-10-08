@@ -1,10 +1,16 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:odyssey_app/pages/travelPage/travelPage.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'package:odyssey_app/themes/app_colors.dart';
+
+import '../../models/distances.dart';
+import '../../models/planets.dart';
+import '../../services/jsonData.dart';
 
 class TutorialPage extends StatefulWidget {
   final String title;
@@ -24,6 +30,28 @@ class TutorialPageState extends State<TutorialPage> {
   void dispose() {
     _pageController.dispose();
     super.dispose();
+  }
+
+  Future<void> readJson() async {
+    final String responsePlanets =
+        await rootBundle.loadString('lib/services/planetas.json');
+    Planets planets = planetsFromJson(responsePlanets);
+
+    final String responseDistances =
+        await rootBundle.loadString('lib/services/distancias.json');
+    Distances distances = distancesFromJson(responseDistances);
+
+    setState(() {
+      planetsList = planets;
+      distancesClassesList = distances;
+    });
+  }
+
+  @override
+  void initState() {
+    readJson();
+    super.initState();
+    print(planetsList);
   }
 
   @override
@@ -270,7 +298,14 @@ class TutorialPageState extends State<TutorialPage> {
                         ],
                       ),
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: ((context) => TravelPage()),
+                            ),
+                          );
+                        },
                         child: const Text(
                           'Entre no\nUniverso',
                           textAlign: TextAlign.center,

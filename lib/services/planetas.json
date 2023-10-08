@@ -2,8 +2,8 @@
   "planets": [
     {
       "nome": "Mercúrio",
-      "max_temperatura": -170,
-      "min_temperatura": 449,
+      "max_temperatura": "-170",
+      "min_temperatura": "449",
       "ano": "87,97 dias",
       "dia": "58 dias e 16 horas",
       "diametro": 4879.4,
@@ -31,15 +31,15 @@
     },
     {
       "nome": "Vênus",
-      "max_temperatura": 465,
-      "min_temperatura": 465,
+      "max_temperatura": "465",
+      "min_temperatura": "465",
       "ano": "224,7 dias",
       "dia": "243 dias",
       "diametro": 12104,
       "tamanho_relacao_terra": 0.95,
       "gravidade": 8.87,
       "descricao": "Vênus é o planeta mais parecido com a Terra em termos de tamanho e composição, mas ele é bem diferente. Ele é conhecido como o planeta irmão da Terra. Mas, aqui está a diferença importante: Vênus tem uma atmosfera muito grossa, cheia de nuvens de ácido, o que faz dele o lugar mais quente do nosso sistema solar, até mais quente do que Mercúrio, mesmo estando mais longe do Sol. Vênus também gira ao contrário da maioria dos planetas, o que significa que o sol nasce no oeste e se põe no leste.",
-      "video": "algum link do youtube",
+      "video": "https://youtu.be/spwCaaEu1Ik",
       "pontos": [
         {
           "nome": "Maxwell Montes",
@@ -75,8 +75,8 @@
     },
     {
       "nome": "Terra",
-      "max_temperatura": -89,
-      "min_temperatura": 58,
+      "max_temperatura": "-89",
+      "min_temperatura": "58",
       "ano": "365 dias",
       "dia": "24 horas",
       "diametro": 12742,
@@ -129,15 +129,15 @@
     },
     {
       "nome": "Marte",
-      "max_temperatura": -195,
-      "min_temperatura": 20,
+      "max_temperatura": "-195",
+      "min_temperatura": "20",
       "ano": "1.88 anos",
       "dia": "1 dia e 1 hora",
       "diametro": 6779,
       "tamanho_relacao_terra": 0.53,
       "gravidade": 3.7,
       "descricao": "Marte é o quarto planeta a partir do Sol em nosso sistema solar, e muitas vezes é chamado de Planeta Vermelho por causa da cor de sua superfície. É um lugar muito frio e seco, e não tem ar que possamos respirar. A superfície de Marte tem montanhas e vales, e até mesmo um grande vulcão chamado Monte Olimpo, que é o vulcão mais alto do sistema solar. Os cientistas estão muito interessados em Marte porque pensam que pode ter tido água no passado e querem saber se há ou já houve vida lá.",
-      "video": "algum link do youtube",
+      "video": "https://youtu.be/kkNr8w2EIps",
       "pontos": [
         {
           "nome": "Monte Olimpo",
@@ -186,7 +186,7 @@
       "tamanho_relacao_terra": 11,
       "gravidade": 24.79,
       "descricao": "Júpiter é o maior planeta do nosso sistema solar e é conhecido como o gigante gasoso. Ele não tem uma superfície sólida como a Terra, sendo feito principalmente de gases como hidrogênio e hélio. Júpiter tem uma grande mancha vermelha, que é uma tempestade gigante que dura séculos. Ele também tem anéis, mas eles são muito tênues e difíceis de ver. Júpiter tem muitas luas, incluindo a lua Io, que tem vulcões ativos. É um planeta fascinante para os cientistas estudarem, e sua grandeza o torna um dos objetos mais brilhantes no céu noturno.",
-      "video": "algum link do youtube",
+      "video": "https://youtu.be/Vdal63MWkOk",
       "pontos": [
         {
           "nome": "Grande Mancha Vermelha",
@@ -235,7 +235,7 @@
       "tamanho_relacao_terra": 9.14,
       "gravidade": 10.44,
       "descricao": "Saturno é o sexto planeta a partir do Sol em nosso sistema solar e é famoso por seus anéis impressionantes. Ele é conhecido como O Senhor dos Anéis. Os anéis de Saturno são feitos de pequenos pedaços de gelo e rocha que giram ao redor do planeta em muitas órbitas. Saturno é um dos maiores planetas, mas é feito principalmente de gás, então não tem uma superfície sólida como a Terra. O planeta também tem muitas luas, incluindo Titã, que é a segunda maior lua do sistema solar e tem uma atmosfera espessa. Observar Saturno com um telescópio é uma experiência incrível devido aos seus deslumbrantes anéis, e ele é um dos objetos mais impressionantes no céu noturno.",
-      "video": "algum link do youtube",
+      "video": "https://youtu.be/VC6s-Ok_e-w",
       "pontos": [
         {
           "nome": "Anéis de Saturno",

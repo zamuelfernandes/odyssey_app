@@ -5,26 +5,48 @@
 
 import 'dart:convert';
 
-List<Planets> planetsFromJson(String str) =>
-    List<Planets>.from(json.decode(str).map((x) => Planets.fromJson(x)));
+Planets planetsFromJson(String str) => Planets.fromJson(json.decode(str));
 
-String planetsToJson(List<Planets> data) =>
-    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+String planetsToJson(Planets data) => json.encode(data.toJson());
 
 class Planets {
+  List<Planet>? planets;
+
+  Planets({
+    this.planets,
+  });
+
+  factory Planets.fromJson(Map<String, dynamic> json) => Planets(
+        planets: json["planets"] == null
+            ? []
+            : List<Planet>.from(
+                json["planets"]!.map((x) => Planet.fromJson(x))),
+      );
+
+  Map<String, dynamic> toJson() => {
+        "planets": planets == null
+            ? []
+            : List<dynamic>.from(planets!.map((x) => x.toJson())),
+      };
+
+  @override
+  String toString() => 'Planets(planets: $planets)';
+}
+
+class Planet {
   String? nome;
   String? maxTemperatura;
   String? minTemperatura;
   String? ano;
   String? dia;
   double? diametro;
-  int? tamanhoRelacaoTerra;
+  double? tamanhoRelacaoTerra;
   double? gravidade;
   String? descricao;
   String? video;
   List<Ponto>? pontos;
 
-  Planets({
+  Planet({
     this.nome,
     this.maxTemperatura,
     this.minTemperatura,
@@ -38,14 +60,14 @@ class Planets {
     this.pontos,
   });
 
-  factory Planets.fromJson(Map<String, dynamic> json) => Planets(
+  factory Planet.fromJson(Map<String, dynamic> json) => Planet(
         nome: json["nome"],
         maxTemperatura: json["max_temperatura"],
         minTemperatura: json["min_temperatura"],
         ano: json["ano"],
         dia: json["dia"],
         diametro: json["diametro"]?.toDouble(),
-        tamanhoRelacaoTerra: json["tamanho_relacao_terra"],
+        tamanhoRelacaoTerra: json["tamanho_relacao_terra"]?.toDouble(),
         gravidade: json["gravidade"]?.toDouble(),
         descricao: json["descricao"],
         video: json["video"],
@@ -72,7 +94,7 @@ class Planets {
 
   @override
   String toString() {
-    return 'Planets(nome: $nome, maxTemperatura: $maxTemperatura, minTemperatura: $minTemperatura, ano: $ano, dia: $dia, diametro: $diametro, tamanhoRelacaoTerra: $tamanhoRelacaoTerra, gravidade: $gravidade, descricao: $descricao, video: $video, pontos: $pontos)';
+    return 'Planet(nome: $nome, maxTemperatura: $maxTemperatura, minTemperatura: $minTemperatura, ano: $ano, dia: $dia, diametro: $diametro, tamanhoRelacaoTerra: $tamanhoRelacaoTerra, gravidade: $gravidade, descricao: $descricao, video: $video, pontos: $pontos)';
   }
 }
 
