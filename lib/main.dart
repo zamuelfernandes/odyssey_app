@@ -23,6 +23,28 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         fontFamily: 'TypoRound',
+        //ELEVATED BUTTON STYLE -------------------------------------------
+        elevatedButtonTheme: const ElevatedButtonThemeData(
+          style: ButtonStyle(
+            shadowColor: MaterialStatePropertyAll(Colors.transparent),
+            shape: MaterialStatePropertyAll(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(15),
+                ),
+              ),
+            ),
+            padding: MaterialStatePropertyAll(
+              EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+            ),
+            textStyle: MaterialStatePropertyAll(
+              TextStyle(
+                fontFamily: 'NicoMoji',
+                fontSize: 30,
+              ),
+            ),
+          ),
+        ),
       ),
       home: initialPage,
     );
