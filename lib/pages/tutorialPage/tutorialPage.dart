@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:odyssey_app/pages/aboutPage/aboutPage.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'package:odyssey_app/themes/app_colors.dart';
@@ -271,14 +270,7 @@ class TutorialPageState extends State<TutorialPage> {
                         ],
                       ),
                       child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const AboutPage(),
-                            ),
-                          );
-                        },
+                        onPressed: () {},
                         child: const Text(
                           'Entre no\nUniverso',
                           textAlign: TextAlign.center,
