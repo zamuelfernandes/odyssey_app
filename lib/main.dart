@@ -1,10 +1,4 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:odyssey_app/models/distances.dart';
-import 'package:odyssey_app/models/planets.dart';
-import 'package:odyssey_app/pages/travelPage/travelPage.dart';
 import 'package:odyssey_app/services/jsonData.dart';
 import 'package:odyssey_app/themes/app_colors.dart';
 import 'pages/tutorialPage/tutorialPage.dart';
