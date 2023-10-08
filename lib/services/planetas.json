@@ -11,7 +11,7 @@
       "imagem": "assets/images/planets/Mercurio.png",
       "gravidade": 3.7,
       "descricao": "Mercúrio é o planeta mais próximo do Sol em nosso sistema solar. Ele é pequeno e não tem ar para respirar. Durante o dia, ele fica muito quente, e à noite, fica muito frio. Sua superfície está cheia de buracos e crateras. Mercúrio é um planeta solitário e desafiador, porque está tão perto do Sol. É um dos lugares mais difíceis de se viver no sistema solar.",
-      "video": "algum link do youtube",
+      "video": "bH1tfUGCoAI",
       "pontos": [
         {
           "nome": "Caloris Planitia",
@@ -41,7 +41,7 @@
       "imagem": "assets/images/planets/Venus.png",
       "gravidade": 8.87,
       "descricao": "Vênus é o planeta mais parecido com a Terra em termos de tamanho e composição, mas ele é bem diferente. Ele é conhecido como o planeta irmão da Terra. Mas, aqui está a diferença importante: Vênus tem uma atmosfera muito grossa, cheia de nuvens de ácido, o que faz dele o lugar mais quente do nosso sistema solar, até mais quente do que Mercúrio, mesmo estando mais longe do Sol. Vênus também gira ao contrário da maioria dos planetas, o que significa que o sol nasce no oeste e se põe no leste.",
-      "video": "https://youtu.be/spwCaaEu1Ik",
+      "video": "spwCaaEu1Ik",
       "pontos": [
         {
           "nome": "Maxwell Montes",
@@ -86,7 +86,7 @@
       "imagem": "assets/images/planets/Terra.png",
       "gravidade": 9.81,
       "descricao": "A Terra é o nosso planeta natal. Ela tem água, ar para respirar e é o único lugar conhecido no universo onde a vida existe. A Terra é grande e tem muitos lugares diferentes, como montanhas, oceanos e florestas. É o terceiro planeta a partir do Sol em nosso sistema solar, e é o lugar perfeito para seres humanos, plantas e animais viverem juntos. Cuidar da Terra é importante para mantermos nosso lar saudável e feliz.",
-      "video": "algum link do youtube",
+      "video": "E9xzBRtJ-gY",
       "pontos": [
         {
           "nome": "Monte Everest",
@@ -141,7 +141,7 @@
       "imagem": "assets/images/planets/Marte.png",
       "gravidade": 3.7,
       "descricao": "Marte é o quarto planeta a partir do Sol em nosso sistema solar, e muitas vezes é chamado de Planeta Vermelho por causa da cor de sua superfície. É um lugar muito frio e seco, e não tem ar que possamos respirar. A superfície de Marte tem montanhas e vales, e até mesmo um grande vulcão chamado Monte Olimpo, que é o vulcão mais alto do sistema solar. Os cientistas estão muito interessados em Marte porque pensam que pode ter tido água no passado e querem saber se há ou já houve vida lá.",
-      "video": "https://youtu.be/kkNr8w2EIps",
+      "video": "kkNr8w2EIps",
       "pontos": [
         {
           "nome": "Monte Olimpo",
@@ -191,7 +191,7 @@
       "imagem": "assets/images/planets/Jupiter.png",
       "gravidade": 24.79,
       "descricao": "Júpiter é o maior planeta do nosso sistema solar e é conhecido como o gigante gasoso. Ele não tem uma superfície sólida como a Terra, sendo feito principalmente de gases como hidrogênio e hélio. Júpiter tem uma grande mancha vermelha, que é uma tempestade gigante que dura séculos. Ele também tem anéis, mas eles são muito tênues e difíceis de ver. Júpiter tem muitas luas, incluindo a lua Io, que tem vulcões ativos. É um planeta fascinante para os cientistas estudarem, e sua grandeza o torna um dos objetos mais brilhantes no céu noturno.",
-      "video": "https://youtu.be/Vdal63MWkOk",
+      "video": "Vdal63MWkOk",
       "pontos": [
         {
           "nome": "Grande Mancha Vermelha",
@@ -241,7 +241,7 @@
       "imagem": "assets/images/planets/Saturno.png",
       "gravidade": 10.44,
       "descricao": "Saturno é o sexto planeta a partir do Sol em nosso sistema solar e é famoso por seus anéis impressionantes. Ele é conhecido como O Senhor dos Anéis. Os anéis de Saturno são feitos de pequenos pedaços de gelo e rocha que giram ao redor do planeta em muitas órbitas. Saturno é um dos maiores planetas, mas é feito principalmente de gás, então não tem uma superfície sólida como a Terra. O planeta também tem muitas luas, incluindo Titã, que é a segunda maior lua do sistema solar e tem uma atmosfera espessa. Observar Saturno com um telescópio é uma experiência incrível devido aos seus deslumbrantes anéis, e ele é um dos objetos mais impressionantes no céu noturno.",
-      "video": "https://youtu.be/VC6s-Ok_e-w",
+      "video": "VC6s-Ok_e-w",
       "pontos": [
         {
           "nome": "Anéis de Saturno",
@@ -291,7 +291,7 @@
       "imagem": "assets/images/planets/Urano.png",
       "gravidade": 8.87,
       "descricao": "Urano é o sétimo planeta a partir do Sol em nosso sistema solar. Ele é conhecido por ser um gigante gasoso como Júpiter e Saturno, mas ele é um pouco diferente. Urano é especial porque gira de lado, quase deitado, ao contrário dos outros planetas que giram mais verticalmente. Isso faz com que ele pareça rolar pelo espaço. O planeta tem anéis, embora sejam bem finos, e também tem muitas luas, a maioria delas recebe nomes de personagens da literatura de William Shakespeare. Urano é um lugar misterioso e distante.",
-      "video": "algum link do youtube",
+      "video": "OdoWxjEPcsc",
       "pontos": [
         {
           "nome": "Anéis de Urano",
@@ -331,7 +331,7 @@
       "imagem": "assets/images/planets/Netuno.png",
       "gravidade": 11.15,
       "descricao": "Netuno é o oitavo e último planeta em nosso sistema solar, e é conhecido como o gigante gelado. Ele é um planeta gigante como Júpiter e Saturno, mas é feito principalmente de gases como hidrogênio e hélio, assim como Urano. Netuno é famoso por sua cor azul profunda, que é devida a compostos de metano na atmosfera que absorvem a luz vermelha e refletem a luz azul. Netuno tem ventos fortes e tempestades poderosas em sua atmosfera, incluindo a Grande Mancha Escura, que é uma tempestade gigante. O planeta tem anéis, mas eles são muito tênues e difíceis de ver. Netuno também possui muitas luas, incluindo Tritão, que é uma das luas mais frias do sistema solar e tem geysers de gelo.",
-      "video": "algum link do youtube",
+      "video": "9cQQaIJVM5A",
       "pontos": [
         {
           "nome": "Grande Mancha Escura",
