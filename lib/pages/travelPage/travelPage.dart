@@ -1,4 +1,6 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:odyssey_app/services/jsonData.dart';
 import 'package:odyssey_app/widgets/custom_dropdown.dart';
 
@@ -6,7 +8,11 @@ import '../../models/planets.dart';
 import '../../themes/app_colors.dart';
 
 class TravelPage extends StatefulWidget {
-  const TravelPage({super.key});
+  final List<Planet> planets;
+  const TravelPage({
+    Key? key,
+    required this.planets,
+  }) : super(key: key);
 
   @override
   State<TravelPage> createState() => _TravelPageState();
@@ -15,9 +21,9 @@ class TravelPage extends StatefulWidget {
 class _TravelPageState extends State<TravelPage> {
   final TextEditingController _dropNamesController = TextEditingController();
 
-  List<String> dropNames = [''];
+  List<String> dropNames = ['Select a Planet'];
 
-  List planetsToRoute = ['Teste', 'Teste', 'Teste', 'Teste', 'Teste'];
+  List<Planet> planetsToRoute = [];
 
   @override
   void initState() {
@@ -25,6 +31,7 @@ class _TravelPageState extends State<TravelPage> {
     // TODO: implement initState
     super.initState();
 
+    planetsToRoute = widget.planets;
     for (Planet planet in planetsList.planets!) {
       dropNames.add(planet.nome!);
     }
@@ -128,9 +135,9 @@ class _TravelPageState extends State<TravelPage> {
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: EdgeInsets.fromLTRB(
-                        15,
+                        0,
                         index == 0 ? 5 : 0,
-                        15,
+                        0,
                         index == (planetsToRoute.length - 1) ? 25 : 8,
                       ),
                       child: Card(
@@ -141,21 +148,27 @@ class _TravelPageState extends State<TravelPage> {
                         elevation: 4,
                         child: ListTile(
                           tileColor: Colors.transparent,
-                          leading: const FlutterLogo(size: 40.0),
-                          contentPadding: const EdgeInsets.all(5),
-                          title: const Text(
-                            'Nome Planeta',
-                            style: TextStyle(
-                              color: AppColors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                          leading: SizedBox(
+                            width: 60,
+                            child: Image(
+                              image: AssetImage(planetsToRoute[index].imagem!),
+                              fit: BoxFit.cover,
                             ),
                           ),
-                          subtitle: const Text(
-                            'Descrição básica',
-                            style: TextStyle(
+                          contentPadding: const EdgeInsets.all(5),
+                          title: Text(
+                            planetsToRoute[index].nome!,
+                            style: const TextStyle(
                               color: AppColors.white,
-                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          subtitle: Text(
+                            '${planetsToRoute[index].descricao!.substring(0, 65)}...',
+                            style: const TextStyle(
+                              color: AppColors.white,
+                              fontSize: 13,
                             ),
                           ),
                           trailing: IconButton(

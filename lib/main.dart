@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.deepPurple),
         useMaterial3: true,
-        fontFamily: 'TypoRound',
+        fontFamily: 'CaboRounded',
         //ELEVATED BUTTON STYLE -------------------------------------------
         elevatedButtonTheme: const ElevatedButtonThemeData(
           style: ButtonStyle(
