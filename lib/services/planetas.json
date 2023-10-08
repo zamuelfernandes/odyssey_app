@@ -1,0 +1,346 @@
+{
+  "planets": [
+    {
+      "nome": "Mercúrio",
+      "max_temperatura": -170,
+      "min_temperatura": 449,
+      "ano": "87,97 dias",
+      "dia": "58 dias e 16 horas",
+      "diametro": 4879.4,
+      "tamanho_relacao_terra": 0.4,
+      "gravidade": 3.7,
+      "descricao": "Mercúrio é o planeta mais próximo do Sol em nosso sistema solar. Ele é pequeno e não tem ar para respirar. Durante o dia, ele fica muito quente, e à noite, fica muito frio. Sua superfície está cheia de buracos e crateras. Mercúrio é um planeta solitário e desafiador, porque está tão perto do Sol. É um dos lugares mais difíceis de se viver no sistema solar.",
+      "video": "algum link do youtube",
+      "pontos": [
+        {
+          "nome": "Caloris Planitia",
+          "descricao": "A maior bacia de impacto em Mercúrio e uma das maiores do sistema solar.",
+          "imagem": "https://smd-cms.nasa.gov/wp-content/uploads/2023/09/PIA19216_1280.jpg"
+        },
+        {
+          "nome": "Bacia Rachmaninoff",
+          "descricao": "Uma característica geológica que se estende por mais de 400 km e é uma das maiores fossas em Mercúrio.",
+          "imagem": "https://www.nasa.gov/wp-content/uploads/2023/03/464814main_PIA12998_full.jpg"
+        },
+        {
+          "nome": "O rim de Rembrandt",
+          "descricao": "Um grande vale em forma de rim, uma das características geológicas mais proeminentes em Mercúrio.",
+          "imagem": "https://www.nasa.gov/wp-content/uploads/2023/03/messenger41-ew1064084344g.nomap_.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Vênus",
+      "max_temperatura": 465,
+      "min_temperatura": 465,
+      "ano": "224,7 dias",
+      "dia": "243 dias",
+      "diametro": 12104,
+      "tamanho_relacao_terra": 0.95,
+      "gravidade": 8.87,
+      "descricao": "Vênus é o planeta mais parecido com a Terra em termos de tamanho e composição, mas ele é bem diferente. Ele é conhecido como o planeta irmão da Terra. Mas, aqui está a diferença importante: Vênus tem uma atmosfera muito grossa, cheia de nuvens de ácido, o que faz dele o lugar mais quente do nosso sistema solar, até mais quente do que Mercúrio, mesmo estando mais longe do Sol. Vênus também gira ao contrário da maioria dos planetas, o que significa que o sol nasce no oeste e se põe no leste.",
+      "video": "algum link do youtube",
+      "pontos": [
+        {
+          "nome": "Maxwell Montes",
+          "descricao": "Localizado em Ishtar Terra, é o ponto mais alto de Vênus, com aproximadamente 11 quilômetros de altura.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00149.width-1600.jpg"
+        },
+        {
+          "nome": "Aphrodite Terra",
+          "descricao": "Uma das maiores regiões continentais de Vênus, conhecida por suas altas planícies e montanhas.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00248.width-1280.jpg"
+        },
+        {
+          "nome": "Terra Ishtar",
+          "descricao": "Uma vasta planície elevada em Vênus, coberta de crateras de impacto.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00093.width-640.jpg"
+        },
+        {
+          "nome": "Ovda Regio",
+          "descricao": "Uma região montanhosa com vales profundamente escavados.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00242.width-1600.jpg"
+        },
+        {
+          "nome": "Atalanta Planitia",
+          "descricao": "Uma grande planície que abrange cerca de 30% da superfície de Vênus.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA00479.jpg"
+        },
+        {
+          "nome": "Alpha Regio",
+          "descricao": "Uma área de alta montanha e vulcões na superfície de Vênus.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00147.width-1600.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Terra",
+      "max_temperatura": -89,
+      "min_temperatura": 58,
+      "ano": "365 dias",
+      "dia": "24 horas",
+      "diametro": 12742,
+      "tamanho_relacao_terra": 1,
+      "gravidade": 9.81,
+      "descricao": "A Terra é o nosso planeta natal. Ela tem água, ar para respirar e é o único lugar conhecido no universo onde a vida existe. A Terra é grande e tem muitos lugares diferentes, como montanhas, oceanos e florestas. É o terceiro planeta a partir do Sol em nosso sistema solar, e é o lugar perfeito para seres humanos, plantas e animais viverem juntos. Cuidar da Terra é importante para mantermos nosso lar saudável e feliz.",
+      "video": "algum link do youtube",
+      "pontos": [
+        {
+          "nome": "Monte Everest",
+          "descricao": "A montanha mais alta do mundo, localizada na cordilheira do Himalaia, com uma altitude de 8.848 metros acima do nível do mar.",
+          "imagem": "https://s4.static.brasilescola.uol.com.br/be/2023/04/vista-do-monte-everest.jpg"
+        },
+        {
+          "nome": "Grande Barreira de Coral",
+          "descricao": "O maior sistema de recifes de coral do mundo, localizado na costa nordeste da Austrália.",
+          "imagem": "https://i0.statig.com.br/bancodeimagens/39/88/xh/3988xhbke9qwgi98r5ema9lbe.jpg"
+        },
+        {
+          "nome": "Grand Canyon",
+          "descricao": "Um desfiladeiro icônico situado no estado do Arizona, nos Estados Unidos.",
+          "imagem": "https://www.americanrivers.org/wp-content/uploads/2022/12/AmyMartin_GC_from_above.jpg"
+        },
+        {
+          "nome": "Amazônia",
+          "descricao": "A maior floresta tropical do mundo, abrangendo grande parte da América do Sul, incluindo o Brasil, Peru e outros países.",
+          "imagem": "https://s2-oglobo.glbimg.com/C93Kq69gkvYORfv1JMnjNCBsnCc=/0x0:644x364/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/R/k/jwtLdTQ9S2XjHlfXt5BQ/amazonia-esg-imagem-de-drone-amazonia.jpg"
+        },
+        {
+          "nome": "Sahara",
+          "descricao": "O deserto do Saara é o maior deserto quente do mundo, cobrindo partes do norte da África.",
+          "imagem": "https://th-thumbnailer.cdn-si-edu.com/uoTi3gl1Bw3fFeQ_rFcp6kU5rwo=/fit-in/1600x0/https%3A%2F%2Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%2Ffiler%2Ff2%2F94%2Ff294516b-db3d-4f7b-9a60-ca3cd5f3d9b2%2Ffbby1h_1.jpg"
+        },
+        {
+          "nome": "Cordilheira dos Andes",
+          "descricao": "A cordilheira mais longa do mundo, que se estende por cerca de 7.000 quilômetros ao longo da costa oeste da América do Sul.",
+          "imagem": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/08/cordilheira-andes.jpg"
+        },
+        {
+          "nome": "Ilha de Páscoa",
+          "descricao": "Uma ilha remota no Oceano Pacífico, famosa por suas estátuas monumentais de pedra chamadas moai.",
+          "imagem": "https://marsemfim.com.br/wp-content/uploads/2018/04/cratera.jpg"
+        },
+        {
+          "nome": "Monte Kilimanjaro",
+          "descricao": "A montanha mais alta da África, localizada na Tanzânia, com uma altura de 5.895 metros.",
+          "imagem": "https://blogdescalada.com/wp-content/uploads/2020/04/kilimanjaro-1.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Marte",
+      "max_temperatura": -195,
+      "min_temperatura": 20,
+      "ano": "1.88 anos",
+      "dia": "1 dia e 1 hora",
+      "diametro": 6779,
+      "tamanho_relacao_terra": 0.53,
+      "gravidade": 3.7,
+      "descricao": "Marte é o quarto planeta a partir do Sol em nosso sistema solar, e muitas vezes é chamado de Planeta Vermelho por causa da cor de sua superfície. É um lugar muito frio e seco, e não tem ar que possamos respirar. A superfície de Marte tem montanhas e vales, e até mesmo um grande vulcão chamado Monte Olimpo, que é o vulcão mais alto do sistema solar. Os cientistas estão muito interessados em Marte porque pensam que pode ter tido água no passado e querem saber se há ou já houve vida lá.",
+      "video": "algum link do youtube",
+      "pontos": [
+        {
+          "nome": "Monte Olimpo",
+          "descricao": "A maior montanha do sistema solar, localizada em Marte, com uma altitude de cerca de 21,9 quilômetros.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00300.width-1600_M4sXab2.jpg"
+        },
+        {
+          "nome": "Valles Marineris",
+          "descricao": "Um gigantesco sistema de cânions que se estende por cerca de 4.000 quilômetros na superfície de Marte.",
+          "imagem": "https://www.nasa.gov/wp-content/uploads/2023/03/marsglobe1.jpg"
+        },
+        {
+          "nome": "Planalto de Tharsis",
+          "descricao": "Uma vasta região elevada em Marte que abriga várias grandes montanhas, incluindo o Monte Olimpo.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00408.width-1600.jpg"
+        },
+        {
+          "nome": "Hellas Planitia",
+          "descricao": "A maior bacia de impacto em Marte, uma depressão profunda que abrange cerca de 2.300 quilômetros.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00416.width-1600.jpg"
+        },
+        {
+          "nome": "Região de Noctis Labyrinthus",
+          "descricao": "Uma região caótica de cânions e depressões em Marte, próxima a Valles Marineris.",
+          "imagem": "https://www.nasa.gov/wp-content/uploads/2023/03/392410main_mro20091007-full_full.jpg"
+        },
+        {
+          "nome": "Meridiani Planum",
+          "descricao": "O local de pouso do rover Opportunity da NASA, que encontrou evidências de água antiga em Marte.",
+          "imagem": "https://mars.nasa.gov/system/resources/detail_files/5260_20_Meridiani_Planum-full2.jpg"
+        },
+        {
+          "nome": "Arabia Terra",
+          "descricao": "Uma região montanhosa e antiga de Marte, com várias crateras de impacto.",
+          "imagem": "https://mars.nasa.gov/system/downloadable_items/45626_PIA24383.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Júpiter",
+      "max_temperatura": "Não possui superfície",
+      "min_temperatura": "Não possui superfície",
+      "ano": "11,86 anos",
+      "dia": "10 horas",
+      "diametro": 4879.4,
+      "tamanho_relacao_terra": 11,
+      "gravidade": 24.79,
+      "descricao": "Júpiter é o maior planeta do nosso sistema solar e é conhecido como o gigante gasoso. Ele não tem uma superfície sólida como a Terra, sendo feito principalmente de gases como hidrogênio e hélio. Júpiter tem uma grande mancha vermelha, que é uma tempestade gigante que dura séculos. Ele também tem anéis, mas eles são muito tênues e difíceis de ver. Júpiter tem muitas luas, incluindo a lua Io, que tem vulcões ativos. É um planeta fascinante para os cientistas estudarem, e sua grandeza o torna um dos objetos mais brilhantes no céu noturno.",
+      "video": "algum link do youtube",
+      "pontos": [
+        {
+          "nome": "Grande Mancha Vermelha",
+          "descricao": "Uma gigantesca tempestade anticiclônica que existe há mais de 300 anos e é visível da Terra.",
+          "imagem": "https://www.nasa.gov/wp-content/uploads/2023/03/pia21985.jpg"
+        },
+        {
+          "nome": "Zonas e Cinturões",
+          "descricao": "Júpiter tem faixas de nuvens claras chamadas zonas e faixas escuras chamadas cinturões que se estendem horizontalmente em torno do planeta.",
+          "imagem": "https://s2.glbimg.com/9OnvIfJ3MX3kr80K6HjjMyrffZI=/e.glbimg.com/og/ed/f/original/2018/08/13/jupiters_new_red_spot_from_hubble.jpg"
+        },
+        {
+          "nome": "Europa",
+          "descricao": "Uma das luas de Júpiter, conhecida por sua superfície gelada e suspeita de abrigar um oceano subterrâneo.",
+          "imagem": "https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGdSIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d84f135900251f487466e67c15b647cb1daaf895/europa_th.jpg?disposition=inline"
+        },
+        {
+          "nome": "Ganimedes",
+          "descricao": "A maior lua de Júpiter e do sistema solar, com uma atmosfera fina e uma superfície variada.",
+          "imagem": "https://photojournal.jpl.nasa.gov/jpeg/PIA01666.jpg"
+        },
+        {
+          "nome": "Io",
+          "descricao": "Uma das luas vulcânicas de Júpiter, com mais de 400 vulcões ativos e uma paisagem vulcânica única.",
+          "imagem": "https://photojournal.jpl.nasa.gov/jpeg/PIA01530.jpg"
+        },
+        {
+          "nome": "Calisto",
+          "descricao": "A lua mais distante de Júpiter, com uma superfície craterizada e uma das mais antigas do sistema solar.",
+          "imagem": "https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWdFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--11f06402c8b9af7adfa6de17254654059b410e60/PIA03456_thumb.jpg?disposition=inline"
+        },
+        {
+          "nome": "Oval BA",
+          "descricao": "Uma tempestade branca oval em Júpiter, também conhecida como 'Red Spot Jr.' por sua aparência semelhante à Grande Mancha Vermelha.",
+          "imagem": "https://cdn.sci.news/images/2019/01/image_6832-Juno-Two-Massive-Storms.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Saturno",
+      "max_temperatura": "Não possui superfície",
+      "min_temperatura": "Não possui superfície",
+      "ano": "29,46 anos",
+      "dia": "11 horas",
+      "diametro": 116460,
+      "tamanho_relacao_terra": 9.14,
+      "gravidade": 10.44,
+      "descricao": "Saturno é o sexto planeta a partir do Sol em nosso sistema solar e é famoso por seus anéis impressionantes. Ele é conhecido como O Senhor dos Anéis. Os anéis de Saturno são feitos de pequenos pedaços de gelo e rocha que giram ao redor do planeta em muitas órbitas. Saturno é um dos maiores planetas, mas é feito principalmente de gás, então não tem uma superfície sólida como a Terra. O planeta também tem muitas luas, incluindo Titã, que é a segunda maior lua do sistema solar e tem uma atmosfera espessa. Observar Saturno com um telescópio é uma experiência incrível devido aos seus deslumbrantes anéis, e ele é um dos objetos mais impressionantes no céu noturno.",
+      "video": "algum link do youtube",
+      "pontos": [
+        {
+          "nome": "Anéis de Saturno",
+          "descricao": "Os impressionantes anéis de Saturno são sua característica mais icônica e visível. Eles são compostos principalmente de partículas de gelo e poeira.",
+          "imagem": "https://media.cnn.com/api/v1/images/stellar/prod/230703122651-02-webb-saturn.jpg?c=original&q=h_618,c_fill"
+        },
+        {
+          "nome": "Encélado",
+          "descricao": "Uma das luas de Saturno, conhecida por suas plumas de gelo e a suspeita de um oceano subterrâneo.",
+          "imagem": "https://imagecache.jpl.nasa.gov/images/edu//enceladus-640x350.jpg"
+        },
+        {
+          "nome": "Titã",
+          "descricao": "A maior lua de Saturno e a segunda maior lua do sistema solar, com uma atmosfera densa e lagos de metano e etano.",
+          "imagem": "https://revistapesquisa.fapesp.br/wp-content/uploads/2021/10/SITE_CreteraTita-2-1140.jpg"
+        },
+        {
+          "nome": "Iapetus",
+          "descricao": "Uma das luas de Saturno, conhecida por sua superfície bicolor, com uma metade muito mais escura do que a outra.",
+          "imagem": "https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmtRIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b535ae227d2d2acf3fd1d45ebeb55e6358bcb05e/iapetus_th.jpg?disposition=inline"
+        },
+        {
+          "nome": "Lua Pan",
+          "descricao": "Uma das pequenas luas de Saturno, que possui uma forma de 'ravióli' devido à sua interação com os anéis.",
+          "imagem": "https://solarsystem.nasa.gov/images/casJPGFullS98/N00277978.jpg"
+        },
+        {
+          "nome": "Hexágono de Saturno",
+          "descricao": "Um padrão de ventos hexagonal no polo norte de Saturno, observado pela primeira vez pela sonda Cassini.",
+          "imagem": "https://smd-cms.nasa.gov/wp-content/uploads/2023/06/PIA14646-jpg.webp"
+        },
+        {
+          "nome": "Dione",
+          "descricao": "Outra das luas de Saturno, com uma superfície marcada por crateras e desfiladeiros.",
+          "imagem": "https://www.nasa.gov/wp-content/uploads/2023/03/pia17197-1041.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Urano",
+      "max_temperatura": "Não possui superfície",
+      "min_temperatura": "Não possui superfície",
+      "ano": "84,01 anos",
+      "dia": "17 horas",
+      "diametro": 50724,
+      "tamanho_relacao_terra": 4,
+      "gravidade": 8.87,
+      "descricao": "Urano é o sétimo planeta a partir do Sol em nosso sistema solar. Ele é conhecido por ser um gigante gasoso como Júpiter e Saturno, mas ele é um pouco diferente. Urano é especial porque gira de lado, quase deitado, ao contrário dos outros planetas que giram mais verticalmente. Isso faz com que ele pareça rolar pelo espaço. O planeta tem anéis, embora sejam bem finos, e também tem muitas luas, a maioria delas recebe nomes de personagens da literatura de William Shakespeare. Urano é um lugar misterioso e distante.",
+      "video": "algum link do youtube",
+      "pontos": [
+        {
+          "nome": "Anéis de Urano",
+          "descricao": "Urano possui um sistema de anéis estreitos e escuros que foram descobertos em 1977.",
+          "imagem": "https://www.nasa.gov/wp-content/uploads/2023/04/stsci-01gwqdqcs9rf0dxmrvq49k4k3b.png"
+        },
+        {
+          "nome": "Ariel",
+          "descricao": "Uma das cinco maiores luas de Urano, conhecida por suas características crateras e desfiladeiros.",
+          "imagem": "https://photojournal.jpl.nasa.gov/jpeg/PIA01534.jpg"
+        },
+        {
+          "nome": "Titânia",
+          "descricao": "A maior lua de Urano e a oitava maior lua do sistema solar, com uma superfície variada.",
+          "imagem": "https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA00036.width-1024.jpg"
+        },
+        {
+          "nome": "Oberon",
+          "descricao": "A segunda maior lua de Urano, com uma superfície marcada por crateras de impacto.",
+          "imagem": "https://photojournal.jpl.nasa.gov/jpeg/PIA00034.jpg"
+        },
+        {
+          "nome": "Umbriel",
+          "descricao": "Uma das maiores luas de Urano, com uma superfície relativamente uniforme e crateras.",
+          "imagem": "https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGNRIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7682311597b105577a67b4e0a2b2eca7596554a5/umbriel_th.jpg?disposition=inline"
+        }
+      ]
+    },
+    {
+      "nome": "Netuno",
+      "max_temperatura": "Não possui superfície",
+      "min_temperatura": "Não possui superfície",
+      "ano": "164,79 anos",
+      "dia": "16 horas",
+      "diametro": 4879.4,
+      "tamanho_relacao_terra": 3.86,
+      "gravidade": 11.15,
+      "descricao": "Netuno é o oitavo e último planeta em nosso sistema solar, e é conhecido como o gigante gelado. Ele é um planeta gigante como Júpiter e Saturno, mas é feito principalmente de gases como hidrogênio e hélio, assim como Urano. Netuno é famoso por sua cor azul profunda, que é devida a compostos de metano na atmosfera que absorvem a luz vermelha e refletem a luz azul. Netuno tem ventos fortes e tempestades poderosas em sua atmosfera, incluindo a Grande Mancha Escura, que é uma tempestade gigante. O planeta tem anéis, mas eles são muito tênues e difíceis de ver. Netuno também possui muitas luas, incluindo Tritão, que é uma das luas mais frias do sistema solar e tem geysers de gelo.",
+      "video": "algum link do youtube",
+      "pontos": [
+        {
+          "nome": "Grande Mancha Escura",
+          "descricao": "Uma tempestade gigante na atmosfera de Netuno, semelhante à Grande Mancha Vermelha de Júpiter.",
+          "imagem": "https://nssdc.gsfc.nasa.gov/imgcat/hires/vg2_p34632.gif"
+        },
+        {
+          "nome": "Tritão",
+          "descricao": "A maior lua de Netuno, conhecida por sua órbita retrógrada, atividade geológica e geiseres de nitrogênio.",
+          "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Triton_moon_mosaic_Voyager_2_%28large%29.jpg/1200px-Triton_moon_mosaic_Voyager_2_%28large%29.jpg"
+        },
+        {
+          "nome": "Proteus",
+          "descricao": "Uma das maiores luas de Netuno, com uma forma irregular e uma superfície fortemente craterizada.",
+          "imagem": "https://upload.wikimedia.org/wikipedia/commons/8/83/Proteus_%28Voyager_2%29.jpg"
+        }
+      ]
+    }
+  ]
+}

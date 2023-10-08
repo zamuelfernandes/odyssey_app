@@ -1,12 +1,16 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'pages/tutorialPage/tutorialPage.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  List? _planets = [];
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +20,16 @@ class MyApp extends StatelessWidget {
     if (hasData) {
       initialPage = const TutorialPage();
     }
+
+    Future<void> readJson() async {
+      final String response =
+          await rootBundle.loadString('lib/services/planetas.json');
+      final data = await json.decode(response);
+      _planets = data["planets"];
+      print(_planets);
+    }
+
+    readJson();
 
     return MaterialApp(
       title: 'Flutter Demo',

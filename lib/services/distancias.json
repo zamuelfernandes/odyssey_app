@@ -1,0 +1,731 @@
+{
+    "classe_c": {
+        "velocidade": 84000,
+        "mercurio" : {
+            "venus": {
+                "distancia": 50290000,
+                "tempo": 25
+            },
+            "terra": {
+                "distancia": 91691000,
+                "tempo": 45
+            },
+            "marte": {
+                "distancia": 170030000,
+                "tempo": 84
+            },
+            "jupiter": {
+                "distancia": 720420000,
+                "tempo": 357
+            },
+            "saturno": {
+                "distancia": 1366690000,
+                "tempo": 678
+            },
+            "urano": {
+                "distancia": 2815640000,
+                "tempo": 1397
+            },
+            "netuno": {
+                "distancia": 4443090000,
+                "tempo": 2204
+            }
+        },
+        "venus" : {
+            "mercurio": {
+                "distancia": 50290000,
+                "tempo": 25
+            },
+            "terra": {
+                "distancia": 41400000,
+                "tempo": 21
+            },
+            "marte": {
+                "distancia": 119740000,
+                "tempo": 59
+            },
+            "jupiter": {
+                "distancia": 670130000,
+                "tempo": 332
+            },
+            "saturno": {
+                "distancia": 1316400000,
+                "tempo": 653
+            },
+            "urano": {
+                "distancia": 2765350000,
+                "tempo": 1372
+            },
+            "netuno": {
+                "distancia": 4392800000,
+                "tempo": 2179
+            }
+        },
+        "terra" : {
+            "mercurio": {
+                "distancia": 91691000,
+                "tempo": 45
+            },
+            "venus": {
+                "distancia": 41400000,
+                "tempo": 21
+            },
+            "marte": {
+                "distancia": 78340000,
+                "tempo": 39
+            },
+            "jupiter": {
+                "distancia": 628730000,
+                "tempo": 312
+            },
+            "saturno": {
+                "distancia": 1275000000,
+                "tempo": 632
+            },
+            "urano": {
+                "distancia": 2723950000,
+                "tempo": 1351
+            },
+            "netuno": {
+                "distancia": 4351400000,
+                "tempo": 2158
+            }
+        },
+        "marte" : {
+            "mercurio": {
+                "distancia": 170030000,
+                "tempo": 84
+            },
+            "venus": {
+                "distancia": 119740000,
+                "tempo": 59
+            },
+            "terra": {
+                "distancia": 78340000,
+                "tempo": 39
+            },
+            "jupiter": {
+                "distancia": 550390000,
+                "tempo": 273
+            },
+            "saturno": {
+                "distancia": 1196660000,
+                "tempo": 594
+            },
+            "urano": {
+                "distancia": 2645610000,
+                "tempo": 1312
+            },
+            "netuno": {
+                "distancia": 4273060000,
+                "tempo": 2120
+            }
+        },
+        "jupiter" : {
+            "mercurio": {
+                "distancia": 720420000,
+                "tempo": 357
+            },
+            "venus": {
+                "distancia": 670130000,
+                "tempo": 332
+            },
+            "terra": {
+                "distancia": 628730000,
+                "tempo": 312
+            },
+            "marte": {
+                "distancia": 550390000,
+                "tempo": 273
+            },
+            "saturno": {
+                "distancia": 646270000,
+                "tempo": 321
+            },
+            "urano": {
+                "distancia": 2095220000,
+                "tempo": 1039
+            },
+            "netuno": {
+                "distancia": 3722670000,
+                "tempo": 1847
+            }
+        },
+        "saturno" : {
+            "mercurio": {
+                "distancia": 1366690000,
+                "tempo": 678
+            },
+            "venus": {
+                "distancia": 1316400000,
+                "tempo": 653
+            },
+            "terra": {
+                "distancia": 1275000000,
+                "tempo": 632
+            },
+            "marte": {
+                "distancia": 1196660000,
+                "tempo": 594
+            },
+            "jupiter": {
+                "distancia": 646270000,
+                "tempo": 321
+            },
+            "urano": {
+                "distancia": 1448950000,
+                "tempo": 719
+            },
+            "netuno": {
+                "distancia": 3076400000,
+                "tempo": 1526
+            }
+        },
+        "urano" : {
+            "mercurio": {
+                "distancia": 2815640000,
+                "tempo": 1397
+            },
+            "venus": {
+                "distancia": 2765350000,
+                "tempo": 1372
+            },
+            "terra": {
+                "distancia": 2723950000,
+                "tempo": 1351
+            },
+            "marte": {
+                "distancia": 2645610000,
+                "tempo": 1312
+            },
+            "jupiter": {
+                "distancia": 2095220000,
+                "tempo": 1039
+            },
+            "saturno": {
+                "distancia": 1448950000,
+                "tempo": 719
+            },
+            "netuno": {
+                "distancia": 1627450000,
+                "tempo": 807
+            }
+        },
+        "netuno" : {
+            "mercurio": {
+                "distancia": 4443090000,
+                "tempo": 2204
+            },
+            "venus": {
+                "distancia": 4392800000,
+                "tempo": 2179
+            },
+            "terra": {
+                "distancia": 4351400000,
+                "tempo": 2158
+            },
+            "marte": {
+                "distancia": 4273060000,
+                "tempo": 2120
+            },
+            "jupiter": {
+                "distancia": 3722670000,
+                "tempo": 1847
+            },
+            "saturno": {
+                "distancia": 3076400000,
+                "tempo": 1526
+            },
+            "urano": {
+                "distancia": 1627450000,
+                "tempo": 807
+            }
+        }  
+    },
+    "classe_b": {
+        "velocidade": 168000,
+        "mercurio" : {
+            "venus": {
+                "distancia": 50290000,
+                "tempo": 12
+            },
+            "terra": {
+                "distancia": 91691000,
+                "tempo": 23
+            },
+            "marte": {
+                "distancia": 170030000,
+                "tempo": 42
+            },
+            "jupiter": {
+                "distancia": 720420000,
+                "tempo": 179
+            },
+            "saturno": {
+                "distancia": 1366690000,
+                "tempo": 339
+            },
+            "urano": {
+                "distancia": 2815640000,
+                "tempo": 698
+            },
+            "netuno": {
+                "distancia": 4443090000,
+                "tempo": 1102
+            }
+        },
+        "venus" : {
+            "mercurio": {
+                "distancia": 50290000,
+                "tempo": 12
+            },
+            "terra": {
+                "distancia": 41400000,
+                "tempo": 10
+            },
+            "marte": {
+                "distancia": 119740000,
+                "tempo": 30
+            },
+            "jupiter": {
+                "distancia": 670130000,
+                "tempo": 166
+            },
+            "saturno": {
+                "distancia": 1316400000,
+                "tempo": 326
+            },
+            "urano": {
+                "distancia": 2765350000,
+                "tempo": 686
+            },
+            "netuno": {
+                "distancia": 4392800000,
+                "tempo": 1089
+            }
+        },
+        "terra" : {
+            "mercurio": {
+                "distancia": 91691000,
+                "tempo": 23
+            },
+            "venus": {
+                "distancia": 41400000,
+                "tempo": 10
+            },
+            "marte": {
+                "distancia": 78340000,
+                "tempo": 19
+            },
+            "jupiter": {
+                "distancia": 628730000,
+                "tempo": 156
+            },
+            "saturno": {
+                "distancia": 1275000000,
+                "tempo": 316
+            },
+            "urano": {
+                "distancia": 2723950000,
+                "tempo": 676
+            },
+            "netuno": {
+                "distancia": 4351400000,
+                "tempo": 1079
+            }
+        },
+        "marte" : {
+            "mercurio": {
+                "distancia": 170030000,
+                "tempo": 42
+            },
+            "venus": {
+                "distancia": 119740000,
+                "tempo": 30
+            },
+            "terra": {
+                "distancia": 78340000,
+                "tempo": 19
+            },
+            "jupiter": {
+                "distancia": 550390000,
+                "tempo": 137
+            },
+            "saturno": {
+                "distancia": 1196660000,
+                "tempo": 297
+            },
+            "urano": {
+                "distancia": 2645610000,
+                "tempo": 656
+            },
+            "netuno": {
+                "distancia": 4273060000,
+                "tempo": 1060
+            }
+        },
+        "jupiter" : {
+            "mercurio": {
+                "distancia": 720420000,
+                "tempo": 179
+            },
+            "venus": {
+                "distancia": 670130000,
+                "tempo": 166
+            },
+            "terra": {
+                "distancia": 628730000,
+                "tempo": 156
+            },
+            "marte": {
+                "distancia": 550390000,
+                "tempo": 137
+            },
+            "saturno": {
+                "distancia": 646270000,
+                "tempo": 160
+            },
+            "urano": {
+                "distancia": 2095220000,
+                "tempo": 520
+            },
+            "netuno": {
+                "distancia": 3722670000,
+                "tempo": 923
+            }
+        },
+        "saturno" : {
+            "mercurio": {
+                "distancia": 1366690000,
+                "tempo": 339
+            },
+            "venus": {
+                "distancia": 1316400000,
+                "tempo": 326
+            },
+            "terra": {
+                "distancia": 1275000000,
+                "tempo": 316
+            },
+            "marte": {
+                "distancia": 1196660000,
+                "tempo": 297
+            },
+            "jupiter": {
+                "distancia": 646270000,
+                "tempo": 160
+            },
+            "urano": {
+                "distancia": 1448950000,
+                "tempo": 359
+            },
+            "netuno": {
+                "distancia": 3076400000,
+                "tempo": 763
+            }
+        },
+        "urano" : {
+            "mercurio": {
+                "distancia": 2815640000,
+                "tempo": 698
+            },
+            "venus": {
+                "distancia": 2765350000,
+                "tempo": 686
+            },
+            "terra": {
+                "distancia": 2723950000,
+                "tempo": 676
+            },
+            "marte": {
+                "distancia": 2645610000,
+                "tempo": 656
+            },
+            "jupiter": {
+                "distancia": 2095220000,
+                "tempo": 520
+            },
+            "saturno": {
+                "distancia": 1448950000,
+                "tempo": 359
+            },
+            "netuno": {
+                "distancia": 1627450000,
+                "tempo": 404
+            }
+        },
+        "netuno" : {
+            "mercurio": {
+                "distancia": 4443090000,
+                "tempo": 1102
+            },
+            "venus": {
+                "distancia": 4392800000,
+                "tempo": 1089
+            },
+            "terra": {
+                "distancia": 4351400000,
+                "tempo": 1079
+            },
+            "marte": {
+                "distancia": 4273060000,
+                "tempo": 1060
+            },
+            "jupiter": {
+                "distancia": 3722670000,
+                "tempo": 923
+            },
+            "saturno": {
+                "distancia": 3076400000,
+                "tempo": 763
+            },
+            "urano": {
+                "distancia": 1627450000,
+                "tempo": 404
+            }
+        }  
+    },
+    "classe_a": {
+        "velocidade": 336000,
+        "mercurio" : {
+            "venus": {
+                "distancia": 50290000,
+                "tempo": 6
+            },
+            "terra": {
+                "distancia": 91691000,
+                "tempo": 11
+            },
+            "marte": {
+                "distancia": 170030000,
+                "tempo": 21
+            },
+            "jupiter": {
+                "distancia": 720420000,
+                "tempo": 89
+            },
+            "saturno": {
+                "distancia": 1366690000,
+                "tempo": 169
+            },
+            "urano": {
+                "distancia": 2815640000,
+                "tempo": 349
+            },
+            "netuno": {
+                "distancia": 4443090000,
+                "tempo": 551
+            }
+        },
+        "venus" : {
+            "mercurio": {
+                "distancia": 50290000,
+                "tempo": 6
+            },
+            "terra": {
+                "distancia": 41400000,
+                "tempo": 5
+            },
+            "marte": {
+                "distancia": 119740000,
+                "tempo": 15
+            },
+            "jupiter": {
+                "distancia": 670130000,
+                "tempo": 83
+            },
+            "saturno": {
+                "distancia": 1316400000,
+                "tempo": 163
+            },
+            "urano": {
+                "distancia": 2765350000,
+                "tempo": 343
+            },
+            "netuno": {
+                "distancia": 4392800000,
+                "tempo": 545
+            }
+        },
+        "terra" : {
+            "mercurio": {
+                "distancia": 91691000,
+                "tempo": 11
+            },
+            "venus": {
+                "distancia": 41400000,
+                "tempo": 5
+            },
+            "marte": {
+                "distancia": 78340000,
+                "tempo": 10
+            },
+            "jupiter": {
+                "distancia": 628730000,
+                "tempo": 78
+            },
+            "saturno": {
+                "distancia": 1275000000,
+                "tempo": 158
+            },
+            "urano": {
+                "distancia": 2723950000,
+                "tempo": 338
+            },
+            "netuno": {
+                "distancia": 4351400000,
+                "tempo": 540
+            }
+        },
+        "marte" : {
+            "mercurio": {
+                "distancia": 170030000,
+                "tempo": 21
+            },
+            "venus": {
+                "distancia": 119740000,
+                "tempo": 15
+            },
+            "terra": {
+                "distancia": 78340000,
+                "tempo": 10
+            },
+            "jupiter": {
+                "distancia": 550390000,
+                "tempo": 68
+            },
+            "saturno": {
+                "distancia": 1196660000,
+                "tempo": 148
+            },
+            "urano": {
+                "distancia": 2645610000,
+                "tempo": 328
+            },
+            "netuno": {
+                "distancia": 4273060000,
+                "tempo": 530
+            }
+        },
+        "jupiter" : {
+            "mercurio": {
+                "distancia": 720420000,
+                "tempo": 89
+            },
+            "venus": {
+                "distancia": 670130000,
+                "tempo": 83
+            },
+            "terra": {
+                "distancia": 628730000,
+                "tempo": 78
+            },
+            "marte": {
+                "distancia": 550390000,
+                "tempo": 68
+            },
+            "saturno": {
+                "distancia": 646270000,
+                "tempo": 80
+            },
+            "urano": {
+                "distancia": 2095220000,
+                "tempo": 260
+            },
+            "netuno": {
+                "distancia": 3722670000,
+                "tempo": 462
+            }
+        },
+        "saturno" : {
+            "mercurio": {
+                "distancia": 1366690000,
+                "tempo": 169
+            },
+            "venus": {
+                "distancia": 1316400000,
+                "tempo": 163
+            },
+            "terra": {
+                "distancia": 1275000000,
+                "tempo": 158
+            },
+            "marte": {
+                "distancia": 1196660000,
+                "tempo": 148
+            },
+            "jupiter": {
+                "distancia": 646270000,
+                "tempo": 80
+            },
+            "urano": {
+                "distancia": 1448950000,
+                "tempo": 180
+            },
+            "netuno": {
+                "distancia": 3076400000,
+                "tempo": 381
+            }
+        },
+        "urano" : {
+            "mercurio": {
+                "distancia": 2815640000,
+                "tempo": 349
+            },
+            "venus": {
+                "distancia": 2765350000,
+                "tempo": 343
+            },
+            "terra": {
+                "distancia": 2723950000,
+                "tempo": 338
+            },
+            "marte": {
+                "distancia": 2645610000,
+                "tempo": 328
+            },
+            "jupiter": {
+                "distancia": 2095220000,
+                "tempo": 260
+            },
+            "saturno": {
+                "distancia": 1448950000,
+                "tempo": 180
+            },
+            "netuno": {
+                "distancia": 1627450000,
+                "tempo": 202
+            }
+        },
+        "netuno" : {
+            "mercurio": {
+                "distancia": 4443090000,
+                "tempo": 551
+            },
+            "venus": {
+                "distancia": 4392800000,
+                "tempo": 545
+            },
+            "terra": {
+                "distancia": 4351400000,
+                "tempo": 540
+            },
+            "marte": {
+                "distancia": 4273060000,
+                "tempo": 530
+            },
+            "jupiter": {
+                "distancia": 3722670000,
+                "tempo": 462
+            },
+            "saturno": {
+                "distancia": 3076400000,
+                "tempo": 381
+            },
+            "urano": {
+                "distancia": 1627450000,
+                "tempo": 202
+            }
+        }  
+    }
+}
