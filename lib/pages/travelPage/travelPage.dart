@@ -15,7 +15,7 @@ class TravelPage extends StatefulWidget {
 class _TravelPageState extends State<TravelPage> {
   final TextEditingController _dropNamesController = TextEditingController();
 
-  List<String> dropNames = [];
+  List<String> dropNames = [''];
 
   List planetsToRoute = ['Teste', 'Teste', 'Teste', 'Teste', 'Teste'];
 
