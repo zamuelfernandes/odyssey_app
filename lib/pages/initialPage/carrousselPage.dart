@@ -4,6 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:odyssey_app/models/planets.dart';
 import 'package:odyssey_app/pages/aboutPage/aboutPage.dart';
+import 'package:odyssey_app/pages/initialPage/aboutPlanet.dart';
 import 'package:odyssey_app/pages/travelPage/travelPage.dart';
 import 'package:odyssey_app/services/jsonData.dart';
 import 'package:odyssey_app/themes/app_colors.dart';
@@ -84,7 +85,7 @@ class CarrouselPageState extends State<CarrouselPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 50, bottom: 100),
+              padding: EdgeInsets.only(top: 50, bottom: screenHeight * 0.1),
               child: CarouselSlider(
                 options: CarouselOptions(
                   height: 350,
@@ -97,14 +98,28 @@ class CarrouselPageState extends State<CarrouselPage> {
                 items: planets.planets!
                     .map(
                       (planet) => InkWell(
-                        onTap: () {},
+                        highlightColor: Colors.transparent,
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: ((context) =>
+                                  AboutPlanetPage(planet: planet)),
+                            ),
+                          );
+                        },
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset(
-                              planet.imagem!,
-                              fit: BoxFit.cover,
-                              width: screenWidth * 0.6,
+                            Hero(
+                              tag: '${planet.nome}',
+                              child: Image.asset(
+                                planet.imagem!,
+                                fit: BoxFit.cover,
+                                width: screenWidth * 0.6,
+                              ),
                             ),
                             Text(
                               planet.nome!,
