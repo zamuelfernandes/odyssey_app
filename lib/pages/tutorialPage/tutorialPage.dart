@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:odyssey_app/pages/travelPage/travelPage.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'package:odyssey_app/themes/app_colors.dart';
@@ -11,6 +10,7 @@ import 'package:odyssey_app/themes/app_colors.dart';
 import '../../models/distances.dart';
 import '../../models/planets.dart';
 import '../../services/jsonData.dart';
+import '../initialPage/carrousselPage.dart';
 
 class TutorialPage extends StatefulWidget {
   final String title;
@@ -302,7 +302,7 @@ class TutorialPageState extends State<TutorialPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: ((context) => TravelPage()),
+                              builder: ((context) => const CarrouselPage()),
                             ),
                           );
                         },

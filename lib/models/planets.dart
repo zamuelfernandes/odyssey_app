@@ -41,6 +41,7 @@ class Planet {
   String? dia;
   double? diametro;
   double? tamanhoRelacaoTerra;
+  String? imagem;
   double? gravidade;
   String? descricao;
   String? video;
@@ -54,6 +55,7 @@ class Planet {
     this.dia,
     this.diametro,
     this.tamanhoRelacaoTerra,
+    this.imagem,
     this.gravidade,
     this.descricao,
     this.video,
@@ -68,6 +70,7 @@ class Planet {
         dia: json["dia"],
         diametro: json["diametro"]?.toDouble(),
         tamanhoRelacaoTerra: json["tamanho_relacao_terra"]?.toDouble(),
+        imagem: json["imagem"],
         gravidade: json["gravidade"]?.toDouble(),
         descricao: json["descricao"],
         video: json["video"],

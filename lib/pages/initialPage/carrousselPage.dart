@@ -1,6 +1,11 @@
+// ignore_for_file: file_names
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:odyssey_app/models/planets.dart';
+import 'package:odyssey_app/pages/aboutPage/aboutPage.dart';
+import 'package:odyssey_app/pages/travelPage/travelPage.dart';
+import 'package:odyssey_app/services/jsonData.dart';
 import 'package:odyssey_app/themes/app_colors.dart';
 
 class CarrouselPage extends StatefulWidget {
@@ -15,25 +20,21 @@ class CarrouselPage extends StatefulWidget {
 }
 
 class CarrouselPageState extends State<CarrouselPage> {
-  final List<String> planetImgList = [
-    //'assets/images/Saturno.png',
-    'assets/images/Terra.png',
-    'assets/images/Marte.png',
-    'assets/images/Urano.png'
-    //   'assets/images/planets/mercurio.png',
-    //   'assets/images/planets/Venus.png',
-    //   'assets/images/planets/Terra.png',
-    //   'assets/images/planets/Marte.png',
-    //   'assets/images/planets/Jupiter.png',
-    //   // 'assets/images/planets/Saturno.svg',
-    //   'assets/images/planets/Uranus.png',
-  ];
-  // var planetsImgMap = {
-  //   'Saturno' : 'assets/images/Saturno.png',
-  //   'Terra' : 'assets/images/Terra.png',
-  //   'Marte' : 'assets/images/Marte.png',
-  //   'Urano' : 'assets/images/Urano.png',
-  // }
+  Planets planets = Planets();
+
+  // final List<String> planetImgList = [
+  //   'assets/images/planets/Saturno.png',
+  //   'assets/images/planets/Terra.png',
+  //   'assets/images/planets/Marte.png',
+  //   'assets/images/planets/Urano.png'
+  // ];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    planets = planetsList;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,19 +45,27 @@ class CarrouselPageState extends State<CarrouselPage> {
       width: screenWidth,
       height: screenHeight,
       decoration: const BoxDecoration(
-          image: DecorationImage(
-        image: AssetImage("assets/images/background.png"),
-        fit: BoxFit.cover,
-      )),
+        image: DecorationImage(
+          image: AssetImage("assets/images/background.png"),
+          fit: BoxFit.cover,
+        ),
+      ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           leading: IconButton(
             color: AppColors.white,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AboutPage(),
+                ),
+              );
+            },
             icon: const Icon(
-              Icons.menu,
+              Icons.info_outlined,
               size: 30,
             ),
           ),
@@ -72,21 +81,16 @@ class CarrouselPageState extends State<CarrouselPage> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Planetas',
-                  style: TextStyle(
-                    fontFamily: 'NicoMoji',
-                    color: AppColors.white,
-                    fontSize: 48,
-                  ),
-                ),
-              ],
+            const Text(
+              'Planetas',
+              style: TextStyle(
+                fontFamily: 'NicoMoji',
+                color: AppColors.white,
+                fontSize: 48,
+              ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 40),
+              padding: const EdgeInsets.only(top: 50, bottom: 100),
               child: CarouselSlider(
                 options: CarouselOptions(
                   height: 350,
@@ -94,29 +98,69 @@ class CarrouselPageState extends State<CarrouselPage> {
                   aspectRatio: 16 / 2,
                   autoPlayCurve: Curves.fastOutSlowIn,
                   enableInfiniteScroll: true,
-                  viewportFraction: 0.6,
+                  viewportFraction: 0.7,
                 ),
-                items: planetImgList
+                items: planets.planets!
                     .map(
-                      (planet) => Column(
-                        children: [
-                          Row(
-                            children: [
-                              Image.asset(
-                                planet,
-                                fit: BoxFit.cover,
-                                height: 200,
+                      (planet) => InkWell(
+                        onTap: () {},
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              planet.imagem!,
+                              fit: BoxFit.cover,
+                              width: screenWidth * 0.6,
+                            ),
+                            Text(
+                              planet.nome!,
+                              style: const TextStyle(
+                                color: AppColors.white,
+                                fontSize: 30,
                               ),
-                            ],
-                          ),
-
-                          Text(
-                            'Planeta',
-                          ),
-                        ],
+                            ),
+                          ],
+                        ),
                       ),
                     )
                     .toList(),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 50),
+              child: Container(
+                decoration: const BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.white,
+                      blurRadius: 15,
+                      spreadRadius: 0.2,
+                    ),
+                  ],
+                ),
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const TravelPage(),
+                      ),
+                    );
+                  },
+                  child: const Column(
+                    children: [
+                      Icon(
+                        Icons.rocket_launch_outlined,
+                        size: 45,
+                      ),
+                      Text(
+                        'Ver Rota',
+                        style: TextStyle(fontSize: 30),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
               ),
             )
           ],
