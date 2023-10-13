@@ -39,6 +39,140 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
     double screenHeight = MediaQuery.sizeOf(context).height;
     double screenWidth = MediaQuery.sizeOf(context).width;
 
+    List<Widget> infoTexts = [
+      Text(
+        '${widget.planet.nome}',
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          fontWeight: FontWeight.bold,
+          color: AppColors.white,
+          fontSize: 40,
+        ),
+      ),
+      Container(
+        width: screenWidth * 0.30,
+        height: 1,
+        color: AppColors.white,
+        margin: const EdgeInsets.only(bottom: 25),
+      ),
+      Text(
+        '- Temperatura Máxima: ${widget.planet.maxTemperatura}',
+        style: const TextStyle(
+          color: AppColors.white,
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ),
+      ),
+      Text(
+        '- Temperatura Mínima: ${widget.planet.minTemperatura}',
+        style: const TextStyle(
+          color: AppColors.white,
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ),
+      ),
+      Text(
+        '- Duração do Ano: ${widget.planet.ano}',
+        style: const TextStyle(
+          color: AppColors.white,
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ),
+      ),
+      Text(
+        '- Duração do Dia: ${widget.planet.dia}',
+        style: const TextStyle(
+          color: AppColors.white,
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ),
+      ),
+      Text(
+        '- Diâmetro: ${widget.planet.diametro}',
+        style: const TextStyle(
+          color: AppColors.white,
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ),
+      ),
+      Text(
+        '- Tamanho em Relação a Terra: ${widget.planet.tamanhoRelacaoTerra}',
+        style: const TextStyle(
+          color: AppColors.white,
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ),
+      ),
+      Text(
+        '- Gravidade: ${widget.planet.gravidade}',
+        style: const TextStyle(
+          color: AppColors.white,
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ),
+      ),
+      Text(
+        '- Descrição: ${widget.planet.descricao}',
+        style: const TextStyle(
+          color: AppColors.white,
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ),
+      ),
+      SizedBox(
+        width: screenWidth * 0.1,
+        child: InkWell(
+          highlightColor: Colors.transparent,
+          splashColor: Colors.transparent,
+          onTap: () {
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return YoutubePlayer(
+                  controller: _controller,
+                  showVideoProgressIndicator: true,
+                  onReady: () {
+                    //_controller.addListener(listener);
+                  },
+                );
+              },
+            );
+          },
+          child: Image.asset(
+            'assets/images/player.png',
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+      Container(
+        decoration: const BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.white,
+              blurRadius: 15,
+              spreadRadius: 0.2,
+            ),
+          ],
+        ),
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const AttractionsPage(),
+              ),
+            );
+          },
+          child: const Text(
+            'Pontos Turisticos',
+            style: TextStyle(fontSize: 18),
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ),
+      const SizedBox(height: 50),
+    ];
+
     return Container(
       width: screenWidth,
       height: screenHeight,
@@ -88,6 +222,34 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
                   color: Colors.black.withOpacity(0.5),
                 ),
               ),
+              SingleChildScrollView(
+                child: SizedBox(
+                  width: screenWidth * 0.8,
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 270),
+                      SizedBox(
+                        height: screenHeight * 0.6,
+                        child: ListView.builder(
+                          itemCount: infoTexts.length,
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: EdgeInsets.fromLTRB(
+                                0,
+                                index == 0 ? 5 : 0,
+                                0,
+                                0,
+                              ),
+                              child: infoTexts[index],
+                            );
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
               Padding(
                 padding: widget.planet.nome == 'Saturno'
                     ? const EdgeInsets.only(top: 60)
@@ -103,149 +265,10 @@ class AboutPlanetPageState extends State<AboutPlanetPage> {
                   ),
                 ),
               ),
-              SizedBox(
-                width: screenWidth * 0.75,
-                child: Column(
-                  children: [
-                    const SizedBox(height: 280),
-                    Text(
-                      '${widget.planet.nome}',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.w700,
-                        color: AppColors.white,
-                        fontSize: 40,
-                      ),
-                    ),
-                    Container(
-                      width: screenWidth * 0.45,
-                      height: 1,
-                      color: AppColors.white,
-                      margin: const EdgeInsets.only(bottom: 25),
-                    ),
-                    SizedBox(
-                      width: screenWidth * 0.75,
-                      child: Column(
-                        children: [
-                          infoTextWidget(
-                            '- Temperatura Máxima: ',
-                            '${widget.planet.maxTemperatura}',
-                          ),
-                          infoTextWidget(
-                            '- Temperatura Mínima: ',
-                            '${widget.planet.minTemperatura}',
-                          ),
-                          infoTextWidget(
-                            '- Duração do Ano: ',
-                            '${widget.planet.ano}',
-                          ),
-                          infoTextWidget(
-                            '- Duração do Dia: ',
-                            '${widget.planet.dia}',
-                          ),
-                          infoTextWidget(
-                            '- Diâmetro: ',
-                            '${widget.planet.nome}',
-                          ),
-                          infoTextWidget(
-                            '- Tamanho em Relação a Terra: ',
-                            '${widget.planet.tamanhoRelacaoTerra}',
-                          ),
-                          infoTextWidget(
-                            '- Gravidade: ',
-                            '${widget.planet.gravidade}',
-                          ),
-                          infoTextWidget(
-                            '- Descrição: ',
-                            '${widget.planet.descricao}',
-                          ),
-                        ],
-                      ),
-                    ),
-                    InkWell(
-                      highlightColor: Colors.transparent,
-                      splashColor: Colors.transparent,
-                      onTap: () {
-                        showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return YoutubePlayer(
-                              controller: _controller,
-                              showVideoProgressIndicator: true,
-                              onReady: () {
-                                //_controller.addListener(listener);
-                              },
-                            );
-                          },
-                        );
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: Image.asset(
-                          'assets/images/player.png',
-                          fit: BoxFit.cover,
-                          width: screenWidth * 0.3,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      decoration: const BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: AppColors.white,
-                            blurRadius: 15,
-                            spreadRadius: 0.2,
-                          ),
-                        ],
-                      ),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const AttractionsPage(),
-                            ),
-                          );
-                        },
-                        child: const Text(
-                          'Pontos Turisticos',
-                          style: TextStyle(fontSize: 18),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-              )
             ],
           ),
         ),
       ),
-    );
-  }
-
-  Widget infoTextWidget(label, value) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          label,
-          style: const TextStyle(
-            color: AppColors.white,
-            fontWeight: FontWeight.w600,
-            fontSize: 16,
-          ),
-        ),
-        Flexible(
-          child: Text(
-            value,
-            style: const TextStyle(
-              color: AppColors.white,
-              fontSize: 16,
-            ),
-          ),
-        ),
-      ],
     );
   }
 }
